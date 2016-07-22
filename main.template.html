@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+<script type="text/javascript" src="js/jquery.jeditable.js"></script>
+<script type="text/javascript" src="js/jquery.numeric.js"></script>
+<script type="text/javascript" src="js/jquery.corner.js"></script>
+<script type="text/javascript" src="js/validacao.js"></script>
+<script type="text/javascript" src="library/jquery.calendario/_scripts/jquery.click-calendario-1.0.js"></script>
+<script type="text/javascript" src="library/jnunemaker-fancy-zoom/jquery/js/fancyzoom.js"></script>  
+<script type="text/javascript" src="library/fisheye-menu/fisheye.js"></script>
+
+<title>GER</title>
+<link rel="stylesheet" type="text/css" href="css/main.style.css" />
+<link rel="stylesheet" type="text/css" href="library/jquery.calendario/_style/jquery.click-calendario-1.0.css" />
+<link rel="stylesheet" type="text/css" href="library/fisheye-menu/fisheye-menu.css" />
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#geral").corner("20px");
+	$(".geral_form").corner("20px");
+	
+	$("body").find("input[type=checkbox]")
+            .css("border","none")
+            .css("background-color","transparent");
+    $("body").find("input[type=radio]")
+            .css("border","none")
+            .css("background-color","transparent");	
+});
+function consumindoXml()
+{
+	$("#carregando").show();
+}
+
+</script>
+</head>
+<body>
+<div id="geral">
+#MENU#
+<div id="content" align="center">
+	#CONTENT#
+	<div id="footer">Desenvolvido por LIAPE <img src="images/logo_unaerp.png" /></div>
+	<div id="carregando">
+		<img src='images/loader.gif'>
+	</div>  
+</div>
+</div>
+</body>
+</html>
